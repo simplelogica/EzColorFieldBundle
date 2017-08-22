@@ -1,4 +1,4 @@
-YUI.add('ezcolor-ezcolor-view', function (Y) {
+YUI.add('ezcolor-view', function (Y) {
     "use strict";
     Y.namespace('eZColor');
 
@@ -12,5 +12,5 @@ YUI.add('ezcolor-ezcolor-view', function (Y) {
         },
     });
 
-    Y.eZ.FieldView.registerFieldView('ezcolorezcolor', Y.eZColor.EzColorView);
+    Y.eZ.FieldView.registerFieldView('ezcolor', Y.eZColor.EzColorView);
 });

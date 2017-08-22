@@ -4,22 +4,22 @@ system:
             modules:
                 ez-rawcontentview:
                     requires:
-                        - 'ezcolor-ezcolor-view'
+                        - 'ezcolor-view'
                 ez-contenteditformview:
                     requires:
-                        - 'ezcolor-ezcolor-editview'
-                ezcolor-ezcolor-view:
+                        - 'ezcolor-editview'
+                ezcolor-view:
                     requires: ['ez-fieldview', 'ezcolorview-ez-template']
-                    path: "%ezcolor_ezcolorfieldtype.public_dir%/js/views/fields/ezcolor-ezcolor-view.js"
-                ezcolor-ezcolor-editview:
+                    path: "%ezcolorfieldtype.public_dir%/js/views/fields/ezcolor-view.js"
+                ezcolor-editview:
                     requires: ['ez-fieldeditview', 'event-valuechange', 'ezcoloreditview-ez-template']
-                    path: "%ezcolor_ezcolorfieldtype.public_dir%/js/views/fields/ezcolor-ezcolor-editview.js"
+                    path: "%ezcolorfieldtype.public_dir%/js/views/fields/ezcolor-editview.js"
                 ezcolorview-ez-template:
                     type: 'template'
-                    path: "%ezcolor_ezcolorfieldtype.public_dir%/templates/fields/view/ezcolor.hbt"
+                    path: "%ezcolorfieldtype.public_dir%/templates/fields/view/ezcolor.hbt"
                 ezcoloreditview-ez-template:
                     type: 'template'
-                    path: "%ezcolor_ezcolorfieldtype.public_dir%/templates/fields/edit/ezcolor.hbt"
+                    path: "%ezcolorfieldtype.public_dir%/templates/fields/edit/ezcolor.hbt"
 
 
 

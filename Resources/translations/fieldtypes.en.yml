@@ -1,2 +1,2 @@
-ezcolorezcolor: { name: "EzColor" }
-field_definition.ezcolorezcolor.default_value: "Default value"
+ezcolor: { name: "EzColor" }
+field_definition.ezcolor.default_value: "Default value"

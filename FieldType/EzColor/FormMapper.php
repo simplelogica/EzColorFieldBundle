@@ -30,7 +30,7 @@ class FormMapper implements FieldDefinitionFormMapperInterface, FieldValueFormMa
                 $fieldDefinitionForm->getConfig()->getFormFactory()->createBuilder()
                     ->create('defaultValue', TextType::class, [
                         'required' => false,
-                        'label' => 'field_definition.ezcolorezcolor.default_value',
+                        'label' => 'field_definition.ezcolor.default_value',
                     ])
                     ->addModelTransformer(new ValueTransformer())
                     ->setAutoInitialize(false)->getForm()

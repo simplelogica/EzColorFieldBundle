@@ -1,8 +1,8 @@
 parameters:
-    ezpublish.fieldType.indexable.ezcolorezcolor.class: Simplelogica\EzColorFieldBundle\FieldType\EzColor\SearchField
+    ezpublish.fieldType.indexable.ezcolor.class: Simplelogica\EzColorFieldBundle\FieldType\EzColor\SearchField
 
 services:
-    ezpublish.fieldType.indexable.ezcolorezcolor:
-        class: "%ezpublish.fieldType.indexable.ezcolorezcolor.class%"
+    ezpublish.fieldType.indexable.ezcolor:
+        class: "%ezpublish.fieldType.indexable.ezcolor.class%"
         tags:
-            - {name: ezpublish.fieldType.indexable, alias: ezcolorezcolor}
+            - {name: ezpublish.fieldType.indexable, alias: ezcolor}

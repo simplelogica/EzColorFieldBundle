@@ -1,6 +1,6 @@
 {% extends 'EzPublishCoreBundle::fielddefinition_settings.html.twig' %}
 
-{% block ezcolorezcolor_settings %}
+{% block ezcolor_settings %}
     <ul class="ez-fielddefinition-settings ez-fielddefinition-{{ fielddefinition.fieldTypeIdentifier }}-settings">
         {% set defaultValue = fielddefinition.defaultValue.text %}
         {{ block('settings_defaultvalue') }}

@@ -40,7 +40,7 @@ class EzColorFieldExtension extends Extension implements PrependExtensionInterfa
     private function prependYui(ContainerBuilder $container)
     {
         $container->setParameter(
-            'ezcolor_ezcolorfieldtype.public_dir',
+            'ezcolorfieldtype.public_dir',
             'bundles/ezcolorfield'
         );
         $yuiConfigFile = __DIR__ . '/../Resources/config/yui.yml';
@@ -52,7 +52,7 @@ class EzColorFieldExtension extends Extension implements PrependExtensionInterfa
     private function prependCss(ContainerBuilder $container)
     {
         $container->setParameter(
-            'ezcolor_ezcolorfieldtype.public_dir',
+            'ezcolorfieldtype.public_dir',
             'bundles/ezcolorfield'
         );
         $cssConfigFile = __DIR__ . '/../Resources/config/css.yml';

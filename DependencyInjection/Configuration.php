@@ -13,7 +13,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('ezcolor_ezcolorfieldtype');
+        $rootNode = $treeBuilder->root('ezcolorfieldtype');
 
         return $treeBuilder;
     }

@@ -9,7 +9,7 @@
     </div>
     <div class="pure-u ez-editfield-input-area ez-default-error-style">
 
-        <div class="ez-editfield-input"><div class="ezcolor-ezcolor-input-ui"><input type="text"
+        <div class="ez-editfield-input"><div class="ezcolor-input-ui"><input type="text"
                 value="{{ field.fieldValue }}"
                 class="ez-validated-input"
                 id="ez-field-{{ content.contentId }}-{{ fieldDefinition.identifier }}"

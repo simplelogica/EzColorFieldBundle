@@ -29,7 +29,7 @@ class Type extends FieldType
 
     public function getFieldTypeIdentifier()
     {
-        return 'ezcolorezcolor';
+        return 'ezcolor';
     }
 
     public function getName(SPIValue $value)
