@@ -8,7 +8,6 @@
             "homepage": "https://the-cocktail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
         "ezsystems/ezpublish-kernel": "~5.3 | ~6.0 | >=2014.03"
