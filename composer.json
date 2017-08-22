@@ -1,0 +1,21 @@
+
+{
+    "name": "simplelogica/ezcolorfieldbundle,
+    "description": "Ez Color Picker for eZ Publish Platform",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Simplelógica & The Cocktail",
+            "homepage": "https://the-cocktail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "ezsystems/ezpublish-kernel": "~5.3 | ~6.0 | >=2014.03"
+    },
+    "autoload": {
+        "psr-4": {"Simplelogica\\EzColorFieldBundle\\": ""}
+    },
+    "target-dir": ""
+}
