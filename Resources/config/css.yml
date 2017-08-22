@@ -1,0 +1,5 @@
+system:
+    default:
+        css:
+            files:
+                - %ezcolor_ezcolorfieldtype.public_dir%/css/views/fields/edit/ezcolor.css

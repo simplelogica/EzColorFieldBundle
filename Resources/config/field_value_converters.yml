@@ -1,0 +1,9 @@
+parameters:
+    ezpublish.fieldType.ezcolorezcolor.converter.class: Simplelogica\EzColorFieldBundle\Persistence\Content\FieldValue\Converter\EzColorConverter
+
+services:
+    ezpublish.fieldType.ezcolorezcolor.converter:
+        class: "%ezpublish.fieldType.ezcolorezcolor.converter.class%"
+        tags:
+            - {name: ezpublish.storageEngine.legacy.converter, alias: ezcolorezcolor, lazy: true, callback: '::create'}
+

@@ -1,0 +1,19 @@
+parameters:
+    ezpublish.fieldType.ezcolorezcolor.class: Simplelogica\EzColorFieldBundle\FieldType\EzColor\Type
+    ezrepoforms.field_type.form_mapper.ezcolorezcolor.class: Simplelogica\EzColorFieldBundle\FieldType\EzColor\FormMapper
+
+services:
+    ezpublish.fieldType.ezcolorezcolor:
+        class: "%ezpublish.fieldType.ezcolorezcolor.class%"
+        parent: ezpublish.fieldType
+        tags:
+            - {name: ezpublish.fieldType, alias: ezcolorezcolor}
+
+    ezrepoforms.field_type.form_mapper.ezcolorezcolor:
+        class: "%ezrepoforms.field_type.form_mapper.ezcolorezcolor.class%"
+        tags:
+            - { name: ez.fieldFormMapper.definition, fieldType: ezcolorezcolor }
+            - { name: ez.fieldFormMapper.value, fieldType: ezcolorezcolor }
+        arguments:
+            - "@ezpublish.api.service.field_type"
+

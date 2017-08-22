@@ -1,0 +1,12 @@
+system:
+    default:
+        fielddefinition_settings_templates:
+            -
+                template: "EzColorFieldBundle::fielddefinition_settings.html.twig"
+        fielddefinition_edit_templates:
+            -
+                template: "EzColorFieldBundle::field_types.html.twig"
+        field_templates:
+            -
+                template: "EzColorFieldBundle::content_fields.html.twig"
+
