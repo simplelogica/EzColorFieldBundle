@@ -3,6 +3,11 @@ YUI.add('ezcolor-view', function (Y) {
     Y.namespace('eZColor');
 
     Y.eZColor.EzColorView = Y.Base.create('ezcolorView', Y.eZ.FieldView, [], {
+
+        initializer: function() {
+            coloPicker();
+        },
+
         _isFieldEmpty: function () {
             return (this.get('field').fieldValue === null);
         },

@@ -5,9 +5,11 @@ system:
                 ez-rawcontentview:
                     requires:
                         - 'ezcolor-view'
+                        - 'colorpicker'
                 ez-contenteditformview:
                     requires:
                         - 'ezcolor-editview'
+                        - 'colorpicker'
                 ezcolor-view:
                     requires: ['ez-fieldview', 'ezcolorview-ez-template']
                     path: "%ezcolorfieldtype.public_dir%/js/views/fields/ezcolor-view.js"
@@ -20,7 +22,8 @@ system:
                 ezcoloreditview-ez-template:
                     type: 'template'
                     path: "%ezcolorfieldtype.public_dir%/templates/fields/edit/ezcolor.hbt"
-
+                colorpicker:
+                    path:  "%ezcolorfieldtype.public_dir%/js/views/fields/colorpicker.js"
 
 
 

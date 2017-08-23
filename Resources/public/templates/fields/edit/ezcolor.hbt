@@ -1,4 +1,3 @@
-<script src="https://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
 <div class="pure-g ez-editfield-row">
     <div class="pure-u ez-editfield-infos">
         <label for="ez-field-{{ content.contentId }}-{{ fieldDefinition.identifier }}">
