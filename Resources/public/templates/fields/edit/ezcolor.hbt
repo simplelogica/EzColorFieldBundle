@@ -1,3 +1,4 @@
+<script src="https://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
 <div class="pure-g ez-editfield-row">
     <div class="pure-u ez-editfield-infos">
         <label for="ez-field-{{ content.contentId }}-{{ fieldDefinition.identifier }}">
@@ -8,13 +9,22 @@
         </label>
     </div>
     <div class="pure-u ez-editfield-input-area ez-default-error-style">
+        <div class="picker">
+            <div id="hue-dial"></div>
+            <div class="sliders">
+                <div id="sat-slider"><strong>Saturation: <span></span></strong></div>
+                <div id="lum-slider"><strong>Luminance: <span></span></strong></div>
+            </div>
+            <div class="color"></div>
 
-        <div class="ez-editfield-input"><div class="ezcolor-input-ui"><input type="text"
-                value="{{ field.fieldValue }}"
-                class="ez-validated-input"
-                id="ez-field-{{ content.contentId }}-{{ fieldDefinition.identifier }}"
-                {{#if isRequired}} required{{/if}}
-            ></div></div>
-        {{> ez_fielddescription_tooltip }}
+            <div class="ez-editfield-input"><div class="ezcolor-ezcolor-input-ui"><input type="text"
+                    value="{{ field.fieldValue }}"
+                    class="ez-validated-input ezcolor-picker"
+                    id="ez-field-{{ content.contentId }}-{{ fieldDefinition.identifier }}"
+                    {{#if isRequired}} required{{/if}}
+                ></div></div>
+            {{> ez_fielddescription_tooltip }}
+        </div>
+
     </div>
 </div>

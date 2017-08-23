@@ -42,6 +42,7 @@ class FormMapper implements FieldDefinitionFormMapperInterface, FieldValueFormMa
         $fieldDefinition = $data->fieldDefinition;
         $formConfig = $fieldForm->getConfig();
         $label = $fieldDefinition->getName($formConfig->getOption('languageCode')) ?: reset($fieldDefinition->getNames());
+        $fieldType = $this->fieldTypeService->getFieldType($fieldDefinition->fieldTypeIdentifier);
 
         $fieldForm
             ->add(
@@ -51,7 +52,7 @@ class FormMapper implements FieldDefinitionFormMapperInterface, FieldValueFormMa
                         TextType::class,
                         ['required' => $fieldDefinition->isRequired, 'label' => $label]
                     )
-                    ->addModelTransformer(new FieldValueTransformer($this->fieldTypeService->getFieldType($fieldDefinition->fieldTypeIdentifier)))
+                    ->addModelTransformer(new FieldValueTransformer($fieldType))
                     ->setAutoInitialize(false)
                     ->getForm()
             );
