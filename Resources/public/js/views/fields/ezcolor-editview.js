@@ -1,4 +1,4 @@
-YUI.add('ezcolor-ezcolor-editview', function (Y) {
+YUI.add('ezcolor-editview', function (Y) {
     "use strict";
     Y.namespace('eZColor');
 
@@ -7,7 +7,7 @@ YUI.add('ezcolor-ezcolor-editview', function (Y) {
 
     Y.eZColor.EzColorEditView = Y.Base.create('ezcolorEditView', Y.eZ.FieldEditView, [], {
         events: {
-            '.ezcolor-ezcolor-input-ui input': {
+            '.ezcolor-input-ui input': {
                 'blur': 'validate',
                 'valuechange': 'validate'
             }
@@ -37,11 +37,11 @@ YUI.add('ezcolor-ezcolor-editview', function (Y) {
         },
 
         _getInputValidity: function () {
-            return this.get('container').one('.ezcolor-ezcolor-input-ui input').get('validity');
+            return this.get('container').one('.ezcolor-input-ui input').get('validity');
         },
 
         _getFieldValue: function () {
-            return this.get('container').one('.ezcolor-ezcolor-input-ui input').get('value');
+            return this.get('container').one('.ezcolor-input-ui input').get('value');
         }
     });
 

@@ -17,7 +17,7 @@
             </div>
             <div class="color"></div>
 
-            <div class="ez-editfield-input"><div class="ezcolor-ezcolor-input-ui"><input type="text"
+            <div class="ez-editfield-input"><div class="ezcolor-input-ui"><input type="text"
                     value="{{ field.fieldValue }}"
                     class="ez-validated-input ezcolor-picker"
                     id="ez-field-{{ content.contentId }}-{{ fieldDefinition.identifier }}"
