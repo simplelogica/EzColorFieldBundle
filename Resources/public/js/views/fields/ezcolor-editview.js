@@ -3,7 +3,7 @@ YUI.add('ezcolor-editview', function (Y) {
     Y.namespace('eZColor');
 
     var L = Y.Lang,
-        FIELDTYPE_IDENTIFIER = 'ezcolorezcolor';
+        FIELDTYPE_IDENTIFIER = 'ezcolor';
 
     Y.eZColor.EzColorEditView = Y.Base.create('ezcolorEditView', Y.eZ.FieldEditView, [], {
         events: {
@@ -124,9 +124,7 @@ function coloPicker() {
         }
 
 
-        var hexOutput = Y.one('#hex-output'),
-            rgbOutput = Y.one('#rgb-output'),
-            hslOutput = Y.one('#hsl-output'),
+        var hexOutput = Y.one('.ezcolor-input-ui input'),
             focused = null;
 
 
@@ -134,23 +132,9 @@ function coloPicker() {
         hexOutput.on('blur', unsetFocused);
         hexOutput.on('valueChange', updatePickerFromValue);
 
-        rgbOutput.on('focus', setFocused);
-        rgbOutput.on('blur', unsetFocused);
-        rgbOutput.on('valueChange', updatePickerFromValue);
-
-        hslOutput.on('focus', setFocused);
-        hslOutput.on('blur', unsetFocused);
-        hslOutput.on('valueChange', updatePickerFromValue);
-
         function updateOutput(hslString) {
             if (hexOutput !== focused) {
                 hexOutput.set('value', Y.Color.toHex(hslString));
-            }
-            if (rgbOutput !== focused) {
-                rgbOutput.set('value', Y.Color.toRGB(hslString));
-            }
-            if (hslOutput !== focused) {
-                hslOutput.set('value', Y.Color.toHex(hslString));
             }
         }
 

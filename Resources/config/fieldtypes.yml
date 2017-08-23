@@ -7,7 +7,7 @@ services:
         class: "%ezpublish.fieldType.ezcolor.class%"
         parent: ezpublish.fieldType
         tags:
-            - {name: ezpublish.fieldType, alias: ezcolor}
+            - { name: ezpublish.fieldType, alias: ezcolor }
 
     ezrepoforms.field_type.form_mapper.ezcolor:
         class: "%ezrepoforms.field_type.form_mapper.ezcolor.class%"
