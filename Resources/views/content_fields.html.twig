@@ -1,8 +1,6 @@
-{% extends 'EzPublishCoreBundle::content_fields.html.twig' %}
-
 {% block ezcolor_field %}
     {% spaceless %}
         {% set field_value = field.value.text %}
-        {{ block( 'simple_inline_field' ) }}
+        style="background-color: {{ field_value }}"
     {% endspaceless %}
 {% endblock %}
