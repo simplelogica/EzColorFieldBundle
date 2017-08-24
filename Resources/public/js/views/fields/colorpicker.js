@@ -75,7 +75,6 @@ function coloPicker() {
         var hexOutput = Y.one('.ezcolor-input-ui input'),
             focused = null;
 
-
         hexOutput.on('focus', setFocused);
         hexOutput.on('blur', unsetFocused);
         hexOutput.on('valueChange', updatePickerFromValue);
@@ -109,6 +108,9 @@ function coloPicker() {
                 focused = null;
             }
         }
-        updatePickerUI();
+        var initial = hexOutput.get('value');
+        if (initial) {
+            updateOutput(initial);
+        }
     });
 };
