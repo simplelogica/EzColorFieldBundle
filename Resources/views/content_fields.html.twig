@@ -1,6 +1,10 @@
 {% block ezcolor_field %}
     {% spaceless %}
         {% set field_value = field.value.text %}
-        style="background-color: {{ field_value }}"
+        {% if parameters.style is defined %}
+            style="{{ parameters.style }}: {{ field_value }}"
+        {% else %}
+            {{ field_value }}
+        {% endif %}
     {% endspaceless %}
 {% endblock %}
