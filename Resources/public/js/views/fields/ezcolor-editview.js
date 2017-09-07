@@ -14,7 +14,11 @@ YUI.add('ezcolor-editview', function (Y) {
         },
 
         initializer: function() {
-            coloPicker();
+            this.after('activeChange', function (e) {
+                if ( this.get('active') ) {
+                    coloPicker();
+                }
+            });
         },
 
         validate: function () {
