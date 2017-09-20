@@ -4,14 +4,6 @@ YUI.add('ezcolor-view', function (Y) {
 
     Y.eZColor.EzColorView = Y.Base.create('ezcolorView', Y.eZ.FieldView, [], {
 
-        initializer: function() {
-            this.after('activeChange', function (e) {
-                if ( this.get('active') ) {
-                    coloPicker();
-                }
-            });
-        },
-
         _isFieldEmpty: function () {
             return (this.get('field').fieldValue === null);
         },
