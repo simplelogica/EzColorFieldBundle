@@ -30,7 +30,7 @@ class EzColorFieldExtension extends Extension implements PrependExtensionInterfa
     {
         $container->prependExtensionConfig('assetic', array('bundles' => array('EzColorFieldBundle')));
 
-        $config = Yaml::parse(__DIR__ . '/../Resources/config/field_templates.yml');
+        $config = Yaml::parse(file_get_contents(__DIR__ . '/../Resources/config/field_templates.yml'));
         $container->prependExtensionConfig('ezpublish', $config);
 
         $this->prependYui($container);
